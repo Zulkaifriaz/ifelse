@@ -1,0 +1,142 @@
+/* IfElse Pages – Coming Soon: Mystry Template
+ * Colorful gradient, playful typography, email-capture form.
+ * @package IfElsePages
+ */
+
+body.ifelsepages-mystry-body {
+	background: linear-gradient( 140deg, #fdf4ff 0%, #eff6ff 50%, #fefce8 100% );
+	color: #1e1b4b;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* Decorative blobs */
+.ifelsepages-mystry-blob {
+	position: fixed;
+	border-radius: 50%;
+	filter: blur( 80px );
+	pointer-events: none;
+	z-index: 0;
+}
+
+.ifelsepages-mystry-blob-1 {
+	width: 500px;
+	height: 500px;
+	top: -150px;
+	left: -150px;
+	background: rgba( 167, 139, 250, 0.30 );
+	animation: ifelsepages-blob-drift 12s ease-in-out infinite;
+}
+
+.ifelsepages-mystry-blob-2 {
+	width: 400px;
+	height: 400px;
+	bottom: -100px;
+	right: -100px;
+	background: rgba( 251, 191, 36, 0.25 );
+	animation: ifelsepages-blob-drift 15s ease-in-out infinite reverse;
+}
+
+@keyframes ifelsepages-blob-drift {
+	0%, 100% { transform: translate( 0, 0 ) scale( 1 ); }
+	50%       { transform: translate( 30px, -30px ) scale( 1.08 ); }
+}
+
+/* Content wrapper */
+.ifelsepages-mystry-wrap {
+	position: relative;
+	z-index: 1;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 60px 24px;
+}
+
+.ifelsepages-mystry-content {
+	max-width: 560px;
+	width: 100%;
+	text-align: center;
+}
+
+.ifelsepages-mystry-logo {
+	margin-bottom: 28px;
+}
+
+.ifelsepages-mystry-logo img {
+	margin-inline: auto;
+}
+
+/* Eyebrow */
+.ifelsepages-mystry-eyebrow {
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #7c3aed;
+	background: rgba( 124, 58, 237, 0.08 );
+	padding: 6px 16px;
+	border-radius: 100px;
+	margin-bottom: 24px;
+}
+
+/* Title */
+.ifelsepages-mystry-title {
+	font-size: clamp( 34px, 5.5vw, 62px );
+	font-weight: 900;
+	letter-spacing: -2px;
+	line-height: 1.5;
+	margin-bottom: 18px;
+	background: linear-gradient( 135deg, #7c3aed 0%, #ec4899 50%, #f59e0b 100% );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.ifelsepages-mystry-desc {
+	font-size: 17px;
+	color: #4b5563;
+	margin-bottom: 40px;
+}
+
+.ifelsepages-mystry-desc p { margin-bottom: 10px; }
+
+/* Button */
+.ifelsepages-mystry-button-wrap {
+	margin-top: 36px;
+}
+
+.ifelsepages-mystry-button {
+	display: inline-block;
+	padding: 14px 32px;
+	background: linear-gradient( 135deg, #7c3aed, #ec4899 );
+	color: #fff;
+	text-decoration: none;
+	border-radius: 100px;
+	font-size: 16px;
+	font-weight: 600;
+	transition: opacity 0.2s, transform 0.1s;
+	box-shadow: 0 4px 14px rgba( 124, 58, 237, 0.3 );
+}
+
+.ifelsepages-mystry-button:hover {
+	opacity: 0.92;
+	transform: translateY( -1px );
+}
+
+.ifelsepages-mystry-button:active {
+	transform: translateY( 0 );
+}
+
+/* Footer */
+.ifelsepages-mystry-footer {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	padding: 18px;
+	font-size: 13px;
+	color: #9ca3af;
+	border-top: 1px solid rgba( 0, 0, 0, 0.06 );
+}

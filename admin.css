@@ -1,0 +1,270 @@
+/* IfElse Pages – Admin Styles v2
+ * @package IfElsePages
+ */
+
+/* ── Wrap ── */
+.ifelsepages-wrap { max-width: 900px; }
+
+/* ── Header ── */
+.ifelsepages-header { padding: 24px 0 12px; margin-bottom: 24px; border-bottom: 2px solid #2271b1; }
+.ifelsepages-header-inner { display: flex; align-items: center; gap: 12px; }
+.ifelsepages-header h1 { margin: 0; font-size: 26px; color: #1d2327; }
+.ifelsepages-version {
+	background: #e8f0fe; color: #2271b1;
+	font-size: 11px; font-weight: 600; padding: 3px 8px;
+	border-radius: 100px; letter-spacing: 0.5px;
+}
+.ifelsepages-tagline { color: #646970; margin-top: 6px; font-size: 13px; }
+
+/* ── Master Toggle ── */
+.ifelsepages-toggle-row {
+	display: flex; align-items: center; gap: 16px;
+	background: #fff; border: 1px solid #c3c4c7; border-radius: 8px;
+	padding: 18px 24px; margin-bottom: 24px;
+}
+.ifelsepages-toggle-label { font-weight: 600; font-size: 15px; }
+.ifelsepages-status-text { color: #646970; font-size: 13px; }
+
+/* Toggle switch */
+.ifelsepages-switch { position: relative; display: inline-block; width: 52px; height: 28px; }
+.ifelsepages-switch input { opacity: 0; width: 0; height: 0; }
+.ifelsepages-slider {
+	position: absolute; cursor: pointer; inset: 0;
+	background: #c3c4c7; border-radius: 28px; transition: background .2s;
+}
+.ifelsepages-slider::before {
+	content: ""; position: absolute;
+	width: 20px; height: 20px; border-radius: 50%;
+	left: 4px; bottom: 4px; background: #fff; transition: transform .2s;
+}
+.ifelsepages-switch input:checked + .ifelsepages-slider { background: #2271b1; }
+.ifelsepages-switch input:checked + .ifelsepages-slider::before { transform: translateX( 24px ); }
+.ifelsepages-switch input:focus + .ifelsepages-slider { box-shadow: 0 0 0 2px #2271b1; }
+
+/* ── Mode Row ── */
+.ifelsepages-mode-row {
+	background: #fff; border: 1px solid #c3c4c7; border-radius: 8px;
+	padding: 20px 24px; margin-bottom: 24px;
+}
+.ifelsepages-section-label {
+	display: block; font-weight: 700; font-size: 13px;
+	text-transform: uppercase; letter-spacing: 0.8px;
+	color: #646970; margin-bottom: 12px;
+}
+.ifelsepages-section-desc { color: #646970; font-size: 13px; margin-bottom: 16px; }
+
+/* Mode tabs */
+.ifelsepages-mode-tabs { display: flex; gap: 8px; flex-wrap: wrap; }
+.ifelsepages-mode-tab {
+	padding: 9px 22px; border: 2px solid #c3c4c7;
+	background: #f6f7f7; border-radius: 6px;
+	cursor: pointer; font-size: 14px; font-weight: 500; color: #1d2327;
+	transition: all .15s;
+}
+.ifelsepages-mode-tab:hover { border-color: #2271b1; color: #2271b1; }
+.ifelsepages-mode-tab.active {
+	background: #2271b1; border-color: #2271b1;
+	color: #fff; font-weight: 600;
+}
+
+/* ── Template Picker Section ── */
+.ifelsepages-section {
+	background: #fff; border: 1px solid #c3c4c7; border-radius: 8px;
+	padding: 24px; margin-bottom: 24px;
+}
+.ifelsepages-section h2.ifelsepages-section-label { font-size: 13px; }
+
+/* Template card grid */
+.ifelsepages-tpl-grid {
+	display: grid;
+	grid-template-columns: repeat( auto-fill, minmax( 180px, 1fr ) );
+	gap: 16px;
+	margin-top: 16px;
+}
+
+.ifelsepages-tpl-card {
+	position: relative;
+	border: 2px solid #e5e7eb;
+	border-radius: 10px;
+	overflow: hidden;
+	cursor: pointer;
+	transition: border-color .15s, box-shadow .15s;
+	background: #f9fafb;
+}
+
+.ifelsepages-tpl-card:not(.is-locked):hover {
+	border-color: #2271b1;
+	box-shadow: 0 0 0 3px rgba( 34, 113, 177, 0.15 );
+}
+
+.ifelsepages-tpl-card.is-active {
+	border-color: #2271b1;
+	box-shadow: 0 0 0 3px rgba( 34, 113, 177, 0.2 );
+}
+
+.ifelsepages-tpl-card.is-locked {
+	cursor: not-allowed;
+	opacity: 0.55;
+	filter: grayscale( 0.4 );
+}
+
+/* Thumbnail */
+.ifelsepages-tpl-thumb {
+	width: 100%; aspect-ratio: 16/10;
+	background: #e9ecef;
+	overflow: hidden;
+}
+
+.ifelsepages-tpl-thumb img {
+	width: 100%; height: 100%;
+	object-fit: cover; display: block;
+	transition: transform .2s;
+}
+
+.ifelsepages-tpl-card:not(.is-locked):hover .ifelsepages-tpl-thumb img {
+	transform: scale( 1.04 );
+}
+
+/* Info */
+.ifelsepages-tpl-info {
+	padding: 10px 12px;
+	display: flex; flex-direction: column; gap: 3px;
+}
+
+.ifelsepages-tpl-info strong {
+	font-size: 13px; color: #1d2327;
+}
+
+.ifelsepages-tpl-info span {
+	font-size: 11px; color: #646970; line-height: 1.4;
+}
+
+/* Badges */
+.ifelsepages-locked-badge,
+.ifelsepages-active-badge {
+	position: absolute; top: 8px; right: 8px;
+	font-size: 11px; font-weight: 700;
+	padding: 3px 9px; border-radius: 100px;
+	line-height: 1.4; z-index: 1;
+}
+
+.ifelsepages-locked-badge {
+	background: #1d2327; color: #fff;
+}
+
+.ifelsepages-active-badge {
+	background: #2271b1; color: #fff;
+}
+
+/* ── Content / Design / Settings Tabs ── */
+.ifelsepages-tabs {
+	display: flex; gap: 4px; margin-bottom: -1px;
+}
+
+.ifelsepages-tab {
+	padding: 10px 22px; border: 1px solid #c3c4c7; border-bottom: none;
+	background: #f6f7f7; border-radius: 4px 4px 0 0;
+	cursor: pointer; font-size: 14px; font-weight: 500; color: #1d2327;
+	transition: background .15s;
+}
+.ifelsepages-tab:hover { background: #eef0f2; }
+.ifelsepages-tab.active {
+	background: #fff; border-bottom-color: #fff;
+	color: #2271b1; font-weight: 600;
+}
+
+/* Tab panels */
+.ifelsepages-tab-panel {
+	display: none; background: #fff;
+	border: 1px solid #c3c4c7; border-radius: 0 4px 4px 4px;
+	padding: 28px 32px; margin-bottom: 20px;
+}
+.ifelsepages-tab-panel.active { display: block; }
+
+/* ── Form Fields ── */
+.ifelsepages-field { margin-bottom: 22px; }
+.ifelsepages-field > label {
+	display: block; font-weight: 600; margin-bottom: 8px; color: #1d2327;
+}
+.ifelsepages-field input[type="text"],
+.ifelsepages-field input[type="datetime-local"],
+.ifelsepages-field textarea,
+.ifelsepages-field select {
+	width: 100%; max-width: 480px;
+	border: 1px solid #c3c4c7; border-radius: 4px;
+	padding: 8px 12px; font-size: 14px; color: #1d2327;
+}
+.ifelsepages-field textarea { resize: vertical; }
+.ifelsepages-field .description { color: #646970; font-size: 13px; margin-bottom: 8px; margin-top: 4px; }
+.ifelsepages-inline-label { display: flex; align-items: center; gap: 8px; font-weight: 500; cursor: pointer; }
+
+/* Media upload */
+.ifelsepages-media-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+.ifelsepages-preview-img { max-height: 60px; max-width: 120px; border-radius: 4px; border: 1px solid #c3c4c7; }
+
+/* Roles grid */
+.ifelsepages-roles-grid { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+.ifelsepages-checkbox-label { display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 13px; }
+
+/* ── Save Row ── */
+.ifelsepages-save-row { padding: 8px 0 24px; }
+
+/* ── Template Options Section ── */
+.ifelsepages-template-options .ifelsepages-tpl-option-group { margin-top: 16px; }
+.ifelsepages-tpl-option-title {
+	font-size: 14px; font-weight: 600; color: #2271b1;
+	margin-bottom: 12px; padding-bottom: 8px;
+	border-bottom: 1px solid #e5e7eb;
+}
+
+.ifelsepages-no-options {
+	color: #646970; font-size: 13px; font-style: italic;
+	margin: 0; padding: 8px 0;
+}
+
+/* Form source radio labels */
+.ifelsepages-form-source-options { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
+.ifelsepages-radio-label {
+	display: flex; align-items: center; gap: 8px;
+	font-size: 14px; cursor: pointer;
+}
+.ifelsepages-radio-label input[type="radio"] { margin: 0; }
+.ifelsepages-radio-disabled {
+	opacity: 0.5; cursor: not-allowed;
+}
+.ifelsepages-radio-disabled input[type="radio"] { cursor: not-allowed; }
+
+.ifelsepages-shortcode-field { margin-top: 12px; }
+
+/* ── Site clock (shown below countdown date picker) ── */
+.ifelsepages-site-clock {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 4px;
+	margin-top: 10px;
+	padding: 10px 14px;
+	background: #f6f7f7;
+	border: 1px solid #dcdcde;
+	border-left: 3px solid #2271b1;
+	border-radius: 4px;
+	font-size: 13px;
+	color: #3c434a;
+	line-height: 1.6;
+}
+.ifelsepages-site-clock strong {
+	color: #1d2327;
+}
+.ifelsepages-site-clock a {
+	color: #2271b1;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.ifelsepages-site-clock a:hover {
+	text-decoration: underline;
+}
+.ifelsepages-site-clock-icon {
+	font-size: 15px;
+	line-height: 1;
+	margin-right: 2px;
+}

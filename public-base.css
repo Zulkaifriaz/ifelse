@@ -1,0 +1,89 @@
+/* IfElse Pages – Base Public CSS
+ * Shared reset and component styles used by all templates.
+ * @package IfElsePages
+ */
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body.ifelsepages-body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	min-height: 100vh;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Logo */
+.ifelsepages-logo img {
+	display: block;
+	max-height: 72px;
+	max-width: 220px;
+	width: auto;
+	object-fit: contain;
+}
+
+/* Countdown shared base */
+.ifelsepages-countdown {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.ifelsepages-countdown-unit {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 64px;
+}
+
+.ifelsepages-countdown-num {
+	font-size: clamp( 36px, 6vw, 60px );
+	font-weight: 800;
+	line-height: 1;
+	letter-spacing: -1px;
+	font-variant-numeric: tabular-nums;
+}
+
+.ifelsepages-countdown-lbl {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 8px;
+	opacity: 0.65;
+}
+
+.ifelsepages-countdown-sep {
+	font-size: clamp( 36px, 6vw, 56px );
+	font-weight: 800;
+	line-height: 1;
+	margin-top: 2px;
+	opacity: 0.3;
+	align-self: flex-start;
+}
+
+/* Screen-reader only utility */
+.screen-reader-text {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	overflow: hidden !important;
+	clip: rect( 1px, 1px, 1px, 1px ) !important;
+	white-space: nowrap !important;
+}
+
+
+/* ── Honeypot anti-spam field (must be invisible to real users) ─────────────── */
+.ifelsepages-hp-field {
+	position: absolute;
+	left: -9999px;
+	top: -9999px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	visibility: hidden;
+}

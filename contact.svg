@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <!-- Left brand panel -->
+  <rect width="140" height="200" fill="#1e293b"/>
+  <!-- Right form panel -->
+  <rect x="140" width="180" height="200" fill="#0f172a"/>
+  <!-- Panel separator -->
+  <rect x="139" y="0" width="1" height="200" fill="rgba(255,255,255,0.06)"/>
+  <!-- Logo placeholder (left) -->
+  <rect x="20" y="28" width="50" height="12" rx="6" fill="rgba(255,255,255,0.15)"/>
+  <!-- Title lines (left) -->
+  <rect x="20" y="52" width="96" height="14" rx="4" fill="rgba(241,245,249,0.85)"/>
+  <rect x="20" y="72" width="80" height="14" rx="4" fill="rgba(241,245,249,0.7)"/>
+  <!-- Desc lines (left) -->
+  <rect x="20" y="98" width="90" height="6" rx="3" fill="rgba(148,163,184,0.55)"/>
+  <rect x="20" y="110" width="76" height="6" rx="3" fill="rgba(148,163,184,0.38)"/>
+  <rect x="20" y="122" width="60" height="6" rx="3" fill="rgba(148,163,184,0.28)"/>
+  <!-- Form heading (right) -->
+  <rect x="156" y="28" width="80" height="10" rx="4" fill="rgba(241,245,249,0.7)"/>
+  <!-- Input fields (right) -->
+  <rect x="156" y="50" width="108" height="20" rx="5" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <rect x="164" y="57" width="60" height="6" rx="3" fill="rgba(255,255,255,0.18)"/>
+  <rect x="156" y="78" width="108" height="20" rx="5" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <rect x="164" y="85" width="72" height="6" rx="3" fill="rgba(255,255,255,0.18)"/>
+  <!-- Textarea (right) -->
+  <rect x="156" y="106" width="108" height="44" rx="5" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <!-- Submit button (right) -->
+  <rect x="156" y="158" width="108" height="26" rx="6" fill="#6366f1"/>
+  <rect x="186" y="167" width="48" height="8" rx="4" fill="rgba(255,255,255,0.7)"/>
+  <!-- Footer -->
+  <rect x="0" y="188" width="320" height="12" fill="rgba(0,0,0,0.15)"/>
+  <rect x="110" y="192" width="100" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
+</svg>

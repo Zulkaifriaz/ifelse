@@ -1,0 +1,112 @@
+/* IfElse Pages – Coming Soon: Dark Template
+ * @package IfElsePages
+ */
+
+body.ifelsepages-dark-body {
+	background-color: #0d0d0d;
+	color: #e8e8e8;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* Full-height stage */
+.ifelsepages-dark-stage {
+	position: relative;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	padding: 60px 24px;
+}
+
+/* Floating particle dots */
+.ifelsepages-dark-particles {
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+}
+
+.ifelsepages-dark-particles span {
+	position: absolute;
+	display: block;
+	border-radius: 50%;
+	background: rgba( 130, 100, 255, 0.18 );
+	animation: ifelsepages-float 8s ease-in-out infinite;
+}
+
+.ifelsepages-dark-particles span:nth-child(1) { width: 320px; height: 320px; top: -80px;  left: -100px; animation-delay: 0s; }
+.ifelsepages-dark-particles span:nth-child(2) { width: 200px; height: 200px; top: 60%;    right: -60px; animation-delay: 1.5s; background: rgba( 60, 180, 255, 0.12 ); }
+.ifelsepages-dark-particles span:nth-child(3) { width: 140px; height: 140px; bottom: 10%; left: 10%;    animation-delay: 3s;  background: rgba( 255, 80, 160, 0.10 ); }
+.ifelsepages-dark-particles span:nth-child(4) { width: 90px;  height: 90px;  top: 20%;    left: 40%;   animation-delay: 2s; }
+.ifelsepages-dark-particles span:nth-child(5) { width: 60px;  height: 60px;  top: 70%;    left: 60%;   animation-delay: 4s;  background: rgba( 60, 255, 180, 0.10 ); }
+.ifelsepages-dark-particles span:nth-child(6) { width: 180px; height: 180px; bottom: -40px; right: 15%; animation-delay: 0.8s; background: rgba( 130, 100, 255, 0.12 ); }
+.ifelsepages-dark-particles span:nth-child(7) { width: 80px;  height: 80px;  top: 10%;    right: 25%;  animation-delay: 5s;  background: rgba( 255, 200, 60, 0.08 ); }
+.ifelsepages-dark-particles span:nth-child(8) { width: 110px; height: 110px; bottom: 30%; left: 25%;   animation-delay: 3.5s; background: rgba( 60, 180, 255, 0.09 ); }
+
+@keyframes ifelsepages-float {
+	0%, 100% { transform: translateY( 0 ) scale( 1 ); }
+	50%       { transform: translateY( -24px ) scale( 1.06 ); }
+}
+
+/* Content */
+.ifelsepages-dark-content {
+	position: relative;
+	z-index: 1;
+	max-width: 660px;
+	width: 100%;
+	text-align: center;
+}
+
+.ifelsepages-logo {
+	margin-bottom: 36px;
+}
+
+.ifelsepages-logo img {
+	margin-inline: auto;
+	/* Invert dark logos to white */
+	filter: brightness( 0 ) invert( 1 );
+	opacity: 0.9;
+}
+
+.ifelsepages-dark-title {
+	font-size: clamp( 36px, 6vw, 72px );
+	font-weight: 900;
+	letter-spacing: -2px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+	background: linear-gradient( 135deg, #fff 0%, #a78bfa 60%, #60a5fa 100% );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.ifelsepages-dark-desc {
+	font-size: 17px;
+	color: rgba( 255, 255, 255, 0.55 );
+	max-width: 480px;
+	margin: 0 auto 44px;
+}
+
+.ifelsepages-dark-desc p { margin-bottom: 10px; }
+.ifelsepages-dark-desc p:last-child { margin-bottom: 0; }
+
+/* Countdown colours for dark template */
+.ifelsepages-dark-body .ifelsepages-countdown-num { color: #a78bfa; }
+.ifelsepages-dark-body .ifelsepages-countdown-lbl { color: rgba( 255, 255, 255, 0.4 ); }
+.ifelsepages-dark-body .ifelsepages-countdown-sep { color: #a78bfa; }
+
+/* Footer */
+.ifelsepages-dark-footer {
+	text-align: center;
+	padding: 18px 24px;
+	font-size: 13px;
+	color: rgba( 255, 255, 255, 0.25 );
+	border-top: 1px solid rgba( 255, 255, 255, 0.06 );
+}
+
+@media ( max-width: 480px ) {
+	.ifelsepages-dark-stage { padding: 40px 20px; }
+	.ifelsepages-dark-title { letter-spacing: -1px; }
+}

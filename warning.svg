@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <!-- Background -->
+  <rect width="320" height="200" fill="#f8f9fa"/>
+  <!-- Card shadow -->
+  <rect x="62" y="24" width="200" height="156" rx="8" fill="rgba(0,0,0,0.05)" transform="translate(2,4)"/>
+  <!-- Card -->
+  <rect x="62" y="24" width="200" height="156" rx="8" fill="#ffffff" stroke="#e9ecef" stroke-width="1.5"/>
+  <!-- Amber top border -->
+  <rect x="62" y="24" width="200" height="4" rx="2" fill="#E8A020"/>
+  <!-- Warning triangle icon -->
+  <polygon points="162,50 182,84 142,84" fill="rgba(232,160,32,0.1)" stroke="#E8A020" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="160" y="60" width="4" height="12" rx="2" fill="#E8A020"/>
+  <circle cx="162" cy="78" r="2.5" fill="#E8A020"/>
+  <!-- Title -->
+  <rect x="92" y="96" width="140" height="12" rx="4" fill="#1a1a1a" opacity="0.75"/>
+  <!-- Desc lines -->
+  <rect x="102" y="116" width="116" height="7" rx="3" fill="rgba(108,117,125,0.45)"/>
+  <rect x="112" y="129" width="96" height="7" rx="3" fill="rgba(108,117,125,0.30)"/>
+  <!-- 503 badge -->
+  <rect x="96" y="148" width="128" height="22" rx="6" fill="#fff8eb" stroke="#fde68a" stroke-width="1.2"/>
+  <rect x="108" y="156" width="30" height="6" rx="3" fill="#92400e" opacity="0.7"/>
+  <rect x="148" y="156" width="64" height="6" rx="3" fill="#92400e" opacity="0.4"/>
+  <!-- Footer -->
+  <rect x="0" y="188" width="320" height="12" fill="#f1f3f5"/>
+  <rect x="110" y="192" width="100" height="4" rx="2" fill="rgba(173,181,189,0.6)"/>
+</svg>

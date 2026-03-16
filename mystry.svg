@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <defs>
+    <linearGradient id="mg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf4ff"/>
+      <stop offset="50%" stop-color="#eff6ff"/>
+      <stop offset="100%" stop-color="#fefce8"/>
+    </linearGradient>
+    <linearGradient id="tg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="50%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="320" height="200" fill="url(#mg)"/>
+  <!-- Blobs -->
+  <circle cx="0" cy="0" r="100" fill="rgba(167,139,250,0.25)"/>
+  <circle cx="320" cy="200" r="80" fill="rgba(251,191,36,0.22)"/>
+  <!-- Eyebrow badge -->
+  <rect x="100" y="22" width="120" height="18" rx="9" fill="rgba(124,58,237,0.10)"/>
+  <rect x="115" y="28" width="90" height="6" rx="3" fill="#7c3aed" opacity="0.5"/>
+  <!-- Title -->
+  <rect x="50" y="50" width="220" height="20" rx="5" fill="url(#tg)" opacity="0.85"/>
+  <!-- Desc lines -->
+  <rect x="70" y="80" width="180" height="8" rx="4" fill="rgba(107,114,128,0.5)"/>
+  <rect x="90" y="94" width="140" height="8" rx="4" fill="rgba(107,114,128,0.35)"/>
+  <!-- Email input -->
+  <rect x="30" y="116" width="192" height="34" rx="17" fill="rgba(255,255,255,0.8)" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="44" y="129" width="100" height="8" rx="4" fill="rgba(156,163,175,0.6)"/>
+  <!-- Button -->
+  <rect x="232" y="116" width="58" height="34" rx="17" fill="url(#bg2)"/>
+  <rect x="244" y="129" width="34" height="8" rx="4" fill="rgba(255,255,255,0.8)"/>
+  <!-- Footer -->
+  <rect x="0" y="188" width="320" height="12" fill="rgba(0,0,0,0.03)"/>
+  <rect x="110" y="192" width="100" height="4" rx="2" fill="rgba(156,163,175,0.4)"/>
+</svg>
